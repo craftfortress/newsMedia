@@ -1,4 +1,4 @@
-#Newsmedia by Chris@craftfortress
+#Newsmedia
 
 Headlines from the major News organisations, streamed with nodejs. 
 
