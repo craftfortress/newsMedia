@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{5fd7aabc-6ff5-4e6f-b133-87839533ad34}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="index.html" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="cred.js" />
+        <Compile Include="error.js" />
+        <Compile Include="generate.js" />
+        <Compile Include="index.js" />
+        <Compile Include="server.js" />
+        <Compile Include="socket.io.js" />
+        <Compile Include="util.js" />
+        <Content Include="public\index.html" />
+        <Compile Include="test\example.js" />
+        <Compile Include="test\oauth.js" />
+        <Compile Include="test\oauth_server.js" />
+        <Compile Include="test\testing.js" />
+        <Content Include="api\v2.0.0\routes.json" />
+        <Content Include="api\v3.0.0\routes.json" />
+        <Compile Include="api\v3.0.0\authorization.js" />
+        <Compile Include="api\v3.0.0\authorizationTest.js" />
+        <Compile Include="api\v3.0.0\events.js" />
+        <Compile Include="api\v3.0.0\eventsTest.js" />
+        <Compile Include="api\v3.0.0\gists.js" />
+        <Compile Include="api\v3.0.0\gistsTest.js" />
+        <Compile Include="api\v3.0.0\gitdata.js" />
+        <Compile Include="api\v3.0.0\gitdataTest.js" />
+        <Compile Include="api\v3.0.0\index.js" />
+        <Compile Include="api\v3.0.0\issues.js" />
+        <Compile Include="api\v3.0.0\issuesTest.js" />
+        <Compile Include="api\v3.0.0\markdown.js" />
+        <Compile Include="api\v3.0.0\markdownTest.js" />
+        <Compile Include="api\v3.0.0\orgs.js" />
+        <Compile Include="api\v3.0.0\orgsTest.js" />
+        <Compile Include="api\v3.0.0\pullRequests.js" />
+        <Compile Include="api\v3.0.0\pullRequestsTest.js" />
+        <Compile Include="api\v3.0.0\repos.js" />
+        <Compile Include="api\v3.0.0\reposTest.js" />
+        <Compile Include="api\v3.0.0\search.js" />
+        <Compile Include="api\v3.0.0\searchTest.js" />
+        <Compile Include="api\v3.0.0\statuses.js" />
+        <Compile Include="api\v3.0.0\statusesTest.js" />
+        <Compile Include="api\v3.0.0\user.js" />
+        <Compile Include="api\v3.0.0\userTest.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="api" />
+        <Folder Include="api\v2.0.0" />
+        <Folder Include="api\v3.0.0" />
+        <Folder Include="public" />
+        <Folder Include="templates" />
+        <Folder Include="test" />
+        <Folder Include="test\node_modules" />
+        <Folder Include="test\node_modules\assert" />
+        <Folder Include="test\node_modules\assert\node_modules" />
+        <Folder Include="test\node_modules\assert\node_modules\util" />
+        <Folder Include="test\node_modules\assert\node_modules\util\node_modules" />
+        <Folder Include="test\node_modules\assert\node_modules\util\node_modules\inherits" />
+        <Folder Include="test\node_modules\assert\node_modules\util\support" />
+        <Folder Include="test\node_modules\assert\node_modules\util\test" />
+        <Folder Include="test\node_modules\assert\node_modules\util\test\browser" />
+        <Folder Include="test\node_modules\assert\node_modules\util\test\node" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>

@@ -1,0 +1,20 @@
+{
+  "name": "newsmedia",
+  "subdomain": "newsmedia",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "newsmedia",
+  "main": "server.js",
+  "dependencies": {
+    "jitsu": "^0.13.16",
+    "npm": "^1.4.13",
+    "socket.io": "~0.9",
+    "node-static": "*",
+    "express": "~3"
+  },
+  "version": "0.0.0-6",
+  "engines": {
+    "node": "0.10.x"
+  }
+}
