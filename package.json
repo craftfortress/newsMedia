@@ -1,20 +1,36 @@
 {
-  "name": "newsmedia",
-  "subdomain": "newsmedia",
+  "name": "newsMedia",
+  "version": "0.0.0",
+  "description": "Gathers news feeds from mainstream media",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "assert": "^1.1.1",
+    "express": "^4.4.3",
+    "feed-read": "^0.0.1",
+    "require": "^0.5.0",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  },
   "scripts": {
+    "test": "mocha test/testing.js --timeout 10000",
     "start": "node server.js"
   },
-  "description": "newsmedia",
-  "main": "server.js",
-  "dependencies": {
-    "jitsu": "^0.13.16",
-    "npm": "^1.4.13",
-    "socket.io": "~0.9",
-    "node-static": "*",
-    "express": "~3"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craftfortress/newsMedia.git"
   },
-  "version": "0.0.0-6",
-  "engines": {
-    "node": "0.10.x"
-  }
+  "keywords": [
+    "awesome"
+  ],
+  "author": "Chris",
+  "license": "ok",
+  "bugs": {
+    "url": "https://github.com/craftfortress/newsMedia/issues"
+  },
+  "homepage": "https://github.com/craftfortress/newsMedia"
 }
