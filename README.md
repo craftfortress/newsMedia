@@ -4,6 +4,6 @@
 
 Main"Streamed" news with nodejs. 
 
-Demo: http://newsmedia.jit.su/
+Demo: http://newsmedia.herokuapp.com/
 
 Unit testing in Mocha.  Run "mocha test/testing.js --timeout 10000" from web root
